@@ -54,6 +54,15 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+textarea {
+  border-radius: 8px;
+  border: 1px solid #f9f9f9;
+  padding: 1em 1em;
+  font-size: 0.5em;
+  font-family: inherit;
+  resize: none;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
