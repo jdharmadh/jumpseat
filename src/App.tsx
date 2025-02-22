@@ -8,7 +8,7 @@ const groq = new Groq({
   dangerouslyAllowBrowser: true,
 });
 
-const MILLIS_TO_WAIT = 500;
+const MILLIS_TO_WAIT = 250;
 
 function App() {
   const [userText, setUserText] = useState("");
@@ -91,7 +91,7 @@ export async function getGroqChatCompletion(userText: string) {
         content: userText,
       },
     ],
-    model: "llama-3.1-8b-instant",
+    model: "llama3-70b-8192",
   });
 }
 
